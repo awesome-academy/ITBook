@@ -46,7 +46,7 @@ class DetailCategoryPresenter(
 
                     if (view != null && !data.isEmpty() && !isStop) {
                         currentPage++
-                        repository.getRemoteBooks(APIQuery.queryBooks(category, currentPage), this)
+                        repository.getRemoteBooks(category, currentPage, this)
                     }
                 }
 

@@ -34,7 +34,7 @@ class SimilarBooksPresenter(
 
                 if (data.isNotEmpty() && !isStop) {
                     currentPage++
-                    repository.getRemoteBooks(APIQuery.queryBooks(title, currentPage), this)
+                    repository.getRemoteBooks(title, currentPage, this)
                 }
             }
 

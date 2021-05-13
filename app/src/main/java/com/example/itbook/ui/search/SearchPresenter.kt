@@ -26,7 +26,7 @@ class SearchPresenter(
 
                     if (data.isNotEmpty() && !isStop) {
                         currentPage++
-                        repository.getRemoteBooks(APIQuery.queryBooks(query, currentPage), this)
+                        repository.getRemoteBooks(query, currentPage, this)
                     } else {
                         if (data.isNotEmpty()) view.resetResult()
                         isStop = false
